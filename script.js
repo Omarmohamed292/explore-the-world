@@ -83,3 +83,10 @@
             updateCard(currentIndex);
         });
     });
+document.querySelectorAll(".explore-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.getElementById("txt").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
