@@ -91,8 +91,5 @@ document.querySelectorAll(".explore-btn").forEach(btn => {
     });
 });
 document.getElementById("ex-btn").addEventListener("click", () => {
-    const currentCity = destinations[currentIndex].city;
-    const currentCountry = destinations[currentIndex].country
-    const famousPlace = destinations[currentIndex].famousPlace
-    alert(`Discover ${currentCity}in ${currentCountry}! \nfamous place : ${famousPlace}`);
-});
+const current = destinations[currentIndex];
+    alert(`Discover ${current.city} in ${current.country}!\nFamous place: ${current.place}`);});
